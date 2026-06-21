@@ -10,7 +10,7 @@ class BLEManager: NSObject, ObservableObject {
     @Published var lightningStatus: LightningStatus = .safe
     @Published var connectionState: ConnectionState = .disconnected
 
-    // MARK: - GATT UUIDs — must match ESP32 firmware
+    // MARK: - GATT UUIDs — must match ESP32 firmware - for now thiese are sample UUID, waiting for implem to be complte with ahrdware
     static let serviceUUID     = CBUUID(string: "4FAFC201-1FB5-459E-8FCC-C5C9C331914B")
     static let statusCharUUID  = CBUUID(string: "BEB5483E-36E1-4688-B7F5-EA07361B26A8")
 
