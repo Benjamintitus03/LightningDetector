@@ -1,5 +1,5 @@
 import SwiftUI
-
+import CoreBluetooth
 struct StatusView: View {
     @ObservedObject var ble: BLEManager
     @State private var pulse = false
