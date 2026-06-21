@@ -1,5 +1,6 @@
 import SwiftUI
 import CoreBluetooth
+
 struct StatusView: View {
     @ObservedObject var ble: BLEManager
     @State private var pulse = false
@@ -15,7 +16,7 @@ struct StatusView: View {
                     Circle()
                         .fill(.green)
                         .frame(width: 7, height: 7)
-                    Text(ble.connectedDevice?.name ?? "Connected")
+                    Text(ble.isMockMode ? "Demo Mode" : (ble.connectedDevice?.name ?? "Connected"))
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
@@ -66,6 +67,15 @@ struct StatusView: View {
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
                 .padding(.top, 20)
+
+            if ble.isMockMode {
+                Button(detected ? "Simulate All Clear" : "Simulate Lightning") {
+                    ble.toggleMockStatus()
+                }
+                .font(.caption)
+                .foregroundStyle(.yellow)
+                .padding(.top, 8)
+            }
 
             Spacer()
         }
