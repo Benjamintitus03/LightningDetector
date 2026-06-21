@@ -1,24 +1,16 @@
-//
-//  ContentView.swift
-//  LightningDetector
-//
-//  Created by Ben Titus on 6/20/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @StateObject private var ble = BLEManager()
 
-#Preview {
-    ContentView()
+    var body: some View {
+        Group {
+            if ble.connectionState == .connected {
+                StatusView(ble: ble)
+            } else {
+                ScanView(ble: ble)
+            }
+        }
+        .preferredColorScheme(.dark)
+    }
 }
