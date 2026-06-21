@@ -1,5 +1,6 @@
 import SwiftUI
 import CoreBluetooth
+
 struct ScanView: View {
     @ObservedObject var ble: BLEManager
 
@@ -76,6 +77,12 @@ struct ScanView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
             }
             .padding(.horizontal, 20)
+
+            Button("Try Demo Mode") {
+                ble.enterMockMode()
+            }
+            .font(.caption)
+            .foregroundStyle(.secondary)
             .padding(.bottom, 40)
         }
     }

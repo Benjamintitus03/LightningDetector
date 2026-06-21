@@ -47,8 +47,27 @@ class BLEManager: NSObject, ObservableObject {
     }
 
     func disconnect() {
+        if isMockMode {
+            isMockMode = false
+            connectionState = .disconnected
+            lightningStatus = .safe
+            return
+        }
         guard let device = connectedDevice else { return }
         centralManager.cancelPeripheralConnection(device)
+    }
+
+    // MARK: - Mock / Demo
+    @Published var isMockMode = false
+
+    func enterMockMode() {
+        isMockMode = true
+        connectionState = .connected
+        lightningStatus = .safe
+    }
+
+    func toggleMockStatus() {
+        lightningStatus = LightningStatus(isDetected: !lightningStatus.isDetected, timestamp: .now)
     }
 }
 
