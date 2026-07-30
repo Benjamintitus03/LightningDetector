@@ -138,3 +138,44 @@ Merge into `master` only when a feature is tested and working.
 - nRF54L20 Product Page — Nordic Semiconductor: https://www.nordicsemi.com
 - Nuvoton ISD2360 — ISD-DEMO2360 User Manual: https://www.nuvoton.com/resource-files/EN_ISD-DEMO2360_User_Manual.pdf
 - Full project documentation: `docs/final-report.pdf`
+
+Moving forward:
+  What's left on your plate (BLE firmware)
+
+  Step 1 — Get your Mac NCS environment set up
+
+  This is the prerequisite for everything else. On your Mac:
+
+  1. Download nRF Connect for Desktop from nordicsemi.com
+  2. Inside it, install the Toolchain Manager plugin
+  3. Use Toolchain Manager to install NCS v2.6 or v2.7
+  4. Install VS Code + the nRF Connect for VS Code extension pack
+  5. Plug in the nRF54L20-DK via the DEBUG USB port — it should show up in the extension's device list
+  6. Open an NCS sample (e.g. zephyr/samples/bluetooth/peripheral_hr) just to confirm you can build and flash
+
+  That's your environment smoke test. Takes about 30–45 min the first time.
+
+  ---
+  Step 2 — Scaffold the real BLE firmware project
+
+  Once your env works, you need a proper NCS project with:
+  - Your custom GATT service (correct UUIDs, notify-only characteristic)
+  - UART RX to receive data from the ESP32
+  - Logic: receive byte on UART → write to characteristic → BLE notification fires to iPhone
+
+  I can write this for you — it's about 3 files (main.c, prj.conf, CMakeLists.txt). The GATT service macro in Zephyr is
+  straightforward once you know the pattern.
+
+  ---
+  Step 3 — UART bridge between ESP32 and Nordic
+
+  The ESP32 runs the lightning algorithm. When it detects a strike, it needs to tell the Nordic chip. The simplest protocol: ESP32
+  sends one byte over UART (0x01 detected, 0x00 clear) → Nordic receives it → writes to BLE characteristic → iPhone gets notified.
+
+  You'll need to coordinate with Beatriz on which ESP32 UART TX pin to use and the baud rate.
+
+  ---
+  Step 4 — Extend the protocol (later)
+
+  When Beatriz's distance/direction algorithm is ready, you add bytes 2 and 3 to the notification without changing UUIDs. The iOS
+  app already handles this gracefully since it only reads data.first right now — you just add parsing
