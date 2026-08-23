@@ -1,0 +1,13 @@
+# Target labels
+ tfm
+# Source files and their labels
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/CMakeFiles/tfm
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/CMakeFiles/tfm.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/CMakeFiles/tfm-complete.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-build.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-configure.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-download.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-install.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-mkdir.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-patch.rule
+E:/Coding/LightningDetector/Firmware/build/Firmware/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-update.rule

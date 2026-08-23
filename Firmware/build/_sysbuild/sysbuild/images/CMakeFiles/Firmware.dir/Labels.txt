@@ -1,0 +1,13 @@
+# Target labels
+ Firmware
+# Source files and their labels
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/CMakeFiles/Firmware
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/CMakeFiles/Firmware.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/CMakeFiles/Firmware-complete.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-build.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-configure.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-download.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-install.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-mkdir.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-patch.rule
+E:/Coding/LightningDetector/Firmware/build/_sysbuild/sysbuild/images/Firmware-prefix/src/Firmware-stamp/Firmware-update.rule

@@ -1,0 +1,7 @@
+default: Firmware
+build_dir: E:/Coding/LightningDetector/Firmware/build
+domains:
+  - name: Firmware
+    build_dir: E:/Coding/LightningDetector/Firmware/build/Firmware
+flash_order:
+  - Firmware

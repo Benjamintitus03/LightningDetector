@@ -1,0 +1,25 @@
+cmake:
+  application:
+    source-dir: 'C:/ncs/v3.4.0/zephyr/share/sysbuild'
+  board:
+    name: 'nrf54lm20dk'
+    path:
+     - 'C:/ncs/v3.4.0/zephyr/boards/nordic/nrf54lm20dk'
+    qualifiers: 'nrf54lm20a/cpuapp/ns'
+    revision: ''
+  images:
+   - name: 'Firmware'
+     source-dir: 'E:/Coding/LightningDetector/Firmware'
+     type: 'MAIN'
+  kconfig:
+    files:
+     - 'E:/Coding/LightningDetector/Firmware/build/_sysbuild/empty.conf'
+     - 'E:/Coding/LightningDetector/Firmware/build/_sysbuild/empty.conf'
+    user-files:
+     - 'E:/Coding/LightningDetector/Firmware/build/_sysbuild/empty.conf'
+  sysbuild: 'true'
+version: '0.1.0'
+west:
+  command: 'C:\ncs\toolchains\dcbdc366a1\opt\bin\Scripts\west build --build-dir e:/Coding/LightningDetector/Firmware/build e:/Coding/LightningDetector/Firmware --pristine --board nrf54lm20dk/nrf54lm20a/cpuapp/ns -- -DCONFIG_DEBUG_THREAD_INFO=y -DCONF_FILE=prj.conf -DDTC_OVERLAY_FILE=app.overlay'
+  topdir: 'c:\ncs\v3.4.0'
+  version: '1.5.0'

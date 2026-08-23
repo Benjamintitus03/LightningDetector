@@ -1,0 +1,1446 @@
+/dts-v1/;
+
+/* node '/' defined in zephyr\dts\vendor\nordic\nrf_common.dtsi:25 */
+/ {
+	#address-cells = < 0x1 >;                                            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:19 */
+	#size-cells = < 0x1 >;                                               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:20 */
+	compatible = "nordic,nrf54lm20dk_nrf54lm20a-cpuapp-ns";              /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:15 */
+	model = "Nordic nRF54LM20 DK nRF54LM20A Application MCU Non-Secure"; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:16 */
+
+	/* node '/pin-controller' defined in zephyr\dts\vendor\nordic\nrf_common.dtsi:26 */
+	pinctrl: pin-controller {
+		compatible = "nordic,nrf-pinctrl"; /* in zephyr\dts\vendor\nordic\nrf_common.dtsi:31 */
+
+		/* node '/pin-controller/uart20_default' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:7 */
+		uart20_default: uart20_default {
+			phandle = < 0x8 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:121 */
+
+			/* node '/pin-controller/uart20_default/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:8 */
+			group1 {
+				psels = < 0x30 >,
+				        < 0x2000032 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:9 */
+			};
+
+			/* node '/pin-controller/uart20_default/group2' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:13 */
+			group2 {
+				psels = < 0x1000031 >,
+				        < 0x3000033 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:14 */
+				bias-pull-up;          /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:16 */
+			};
+		};
+
+		/* node '/pin-controller/uart20_sleep' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:20 */
+		uart20_sleep: uart20_sleep {
+			phandle = < 0x9 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:122 */
+
+			/* node '/pin-controller/uart20_sleep/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:21 */
+			group1 {
+				psels = < 0x1000031 >,
+				        < 0x2000032 >,
+				        < 0x3000033 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:22 */
+				low-power-enable;      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:25 */
+			};
+
+			/* node '/pin-controller/uart20_sleep/group2' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:28 */
+			group2 {
+				psels = < 0x30 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:29 */
+				low-power-enable; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:30 */
+				bias-pull-up;     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:31 */
+			};
+		};
+
+		/* node '/pin-controller/pwm20_default' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:35 */
+		pwm20_default: pwm20_default {
+			phandle = < 0xf >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:135 */
+
+			/* node '/pin-controller/pwm20_default/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:36 */
+			group1 {
+				psels = < 0x16000039 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:37 */
+			};
+		};
+
+		/* node '/pin-controller/pwm20_sleep' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:41 */
+		pwm20_sleep: pwm20_sleep {
+			phandle = < 0x10 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:136 */
+
+			/* node '/pin-controller/pwm20_sleep/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:42 */
+			group1 {
+				psels = < 0x16000039 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:43 */
+				low-power-enable;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:44 */
+			};
+		};
+
+		/* node '/pin-controller/uart30_default' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:48 */
+		uart30_default: uart30_default {
+			phandle = < 0x17 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:128 */
+
+			/* node '/pin-controller/uart30_default/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:49 */
+			group1 {
+				psels = < 0x6 >,
+				        < 0x2000008 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:50 */
+			};
+
+			/* node '/pin-controller/uart30_default/group2' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:54 */
+			group2 {
+				psels = < 0x1000007 >,
+				        < 0x3000009 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:55 */
+				bias-pull-up;          /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:57 */
+			};
+		};
+
+		/* node '/pin-controller/uart30_sleep' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:61 */
+		uart30_sleep: uart30_sleep {
+			phandle = < 0x18 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:129 */
+
+			/* node '/pin-controller/uart30_sleep/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:62 */
+			group1 {
+				psels = < 0x6 >,
+				        < 0x1000007 >,
+				        < 0x2000008 >,
+				        < 0x3000009 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:63 */
+				low-power-enable;      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:67 */
+			};
+		};
+
+		/* node '/pin-controller/spi00_default' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:71 */
+		spi00_default: spi00_default {
+			phandle = < 0x4 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:125 */
+
+			/* node '/pin-controller/spi00_default/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:72 */
+			group1 {
+				psels = < 0x4000041 >,
+				        < 0x5000042 >,
+				        < 0x6000044 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:73 */
+			};
+		};
+
+		/* node '/pin-controller/spi00_sleep' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:79 */
+		spi00_sleep: spi00_sleep {
+			phandle = < 0x5 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:126 */
+
+			/* node '/pin-controller/spi00_sleep/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:80 */
+			group1 {
+				psels = < 0x4000041 >,
+				        < 0x5000042 >,
+				        < 0x6000044 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:81 */
+				low-power-enable;      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:84 */
+			};
+		};
+
+		/* node '/pin-controller/spi22_default' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:103 */
+		spi22_default: spi22_default {
+			phandle = < 0xb >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:157 */
+
+			/* node '/pin-controller/spi22_default/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:104 */
+			group1 {
+				psels = < 0x4000063 >,
+				        < 0x6000061 >,
+				        < 0x5000060 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:105 */
+				bias-pull-down;        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:108 */
+			};
+		};
+
+		/* node '/pin-controller/spi22_sleep' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:112 */
+		spi22_sleep: spi22_sleep {
+			phandle = < 0xc >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:158 */
+
+			/* node '/pin-controller/spi22_sleep/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:113 */
+			group1 {
+				psels = < 0x4000063 >,
+				        < 0x6000061 >,
+				        < 0x5000060 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:114 */
+				bias-pull-down;        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:117 */
+				low-power-enable;      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:118 */
+			};
+		};
+
+		/* node '/pin-controller/pwm21_default' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:122 */
+		pwm21_default: pwm21_default {
+			phandle = < 0x11 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:163 */
+
+			/* node '/pin-controller/pwm21_default/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:123 */
+			group1 {
+				psels = < 0x16000064 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:124 */
+			};
+		};
+
+		/* node '/pin-controller/pwm21_sleep' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:128 */
+		pwm21_sleep: pwm21_sleep {
+			phandle = < 0x12 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:164 */
+
+			/* node '/pin-controller/pwm21_sleep/group1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:129 */
+			group1 {
+				psels = < 0x16000064 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:130 */
+				low-power-enable;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20_a_b-pinctrl.dtsi:131 */
+			};
+		};
+
+		/* node '/pin-controller/pdm20_default' defined in ./app.overlay:10 */
+		pdm20_default: pdm20_default {
+			phandle = < 0xd >; /* in ./app.overlay:32 */
+
+			/* node '/pin-controller/pdm20_default/group1' defined in ./app.overlay:11 */
+			group1 {
+				psels = < 0x1400002a >;      /* in ./app.overlay:12 */
+				nordic,drive-mode = < 0x3 >; /* in ./app.overlay:13 */
+			};
+
+			/* node '/pin-controller/pdm20_default/group2' defined in ./app.overlay:15 */
+			group2 {
+				psels = < 0x1500002b >; /* in ./app.overlay:16 */
+				bias-pull-down;         /* in ./app.overlay:17 */
+			};
+		};
+
+		/* node '/pin-controller/pdm20_sleep' defined in ./app.overlay:21 */
+		pdm20_sleep: pdm20_sleep {
+			phandle = < 0xe >; /* in ./app.overlay:33 */
+
+			/* node '/pin-controller/pdm20_sleep/group1' defined in ./app.overlay:22 */
+			group1 {
+				psels = < 0x1400002a >,
+				        < 0x1500002b >; /* in ./app.overlay:23 */
+				low-power-enable;       /* in ./app.overlay:25 */
+			};
+		};
+	};
+
+	/* node '/entropy_bt_hci' defined in zephyr\dts\vendor\nordic\nrf_common.dtsi:34 */
+	rng_hci: entropy_bt_hci {
+		compatible = "zephyr,bt-hci-entropy"; /* in zephyr\dts\vendor\nordic\nrf_common.dtsi:35 */
+		status = "disabled";                  /* in zephyr\dts\vendor\nordic\nrf_common.dtsi:36 */
+	};
+
+	/* node '/cpus' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:22 */
+	cpus {
+		#address-cells = < 0x1 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:23 */
+		#size-cells = < 0x0 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:24 */
+
+		/* node '/cpus/cpu@0' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:26 */
+		cpuapp: cpu: cpu@0 {
+			compatible = "arm,cortex-m33f"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:27 */
+			reg = < 0x0 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:28 */
+			device_type = "cpu";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:29 */
+			clocks = < &hfpll >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:30 */
+			#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:31 */
+			#size-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:32 */
+
+			/* node '/cpus/cpu@0/itm@e0000000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:34 */
+			itm: itm@e0000000 {
+				compatible = "arm,armv8m-itm";     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:35 */
+				reg = < 0xe0000000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:36 */
+				swo-ref-frequency = < 0x7a12000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:37 */
+			};
+		};
+	};
+
+	/* node '/clocks' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:51 */
+	clocks {
+
+		/* node '/clocks/pclk' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:52 */
+		pclk: pclk {
+			compatible = "fixed-clock";     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:53 */
+			#clock-cells = < 0x0 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:54 */
+			clock-frequency = < 0xf42400 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:55 */
+			phandle = < 0x15 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:649 */
+		};
+
+		/* node '/clocks/pclk32m' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:58 */
+		pclk32m: pclk32m {
+			compatible = "fixed-clock";      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:59 */
+			#clock-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:60 */
+			clock-frequency = < 0x1e84800 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:61 */
+			phandle = < 0x16 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:663 */
+		};
+
+		/* node '/clocks/lfxo' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:64 */
+		lfxo: lfxo {
+			compatible = "nordic,nrf54l-lfxo";        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:65 */
+			#clock-cells = < 0x0 >;                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:66 */
+			clock-frequency = < 0x8000 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:67 */
+			load-capacitors = "internal";             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:41 */
+			load-capacitance-femtofarad = < 0x4268 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:42 */
+			phandle = < 0x14 >;                       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:649 */
+		};
+
+		/* node '/clocks/hfxo' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:70 */
+		hfxo: hfxo {
+			compatible = "nordic,nrf54l-hfxo";        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:71 */
+			#clock-cells = < 0x0 >;                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:72 */
+			clock-frequency = < 0x1e84800 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:73 */
+			startup-time-us = < 0x672 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:74 */
+			load-capacitors = "internal";             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:46 */
+			load-capacitance-femtofarad = < 0x3a98 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:47 */
+			phandle = < 0x7 >;                        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:294 */
+		};
+
+		/* node '/clocks/hfpll' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:77 */
+		hfpll: hfpll {
+			compatible = "fixed-clock";      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:78 */
+			#clock-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:79 */
+			clock-frequency = < 0x7a12000 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:37 */
+			phandle = < 0x1 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:30 */
+		};
+
+		/* node '/clocks/aclk' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:83 */
+		aclk: aclk {
+			compatible = "fixed-clock";      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:84 */
+			#clock-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:85 */
+			clock-frequency = < 0x16e3600 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:86 */
+		};
+	};
+
+	/* node '/soc' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:90 */
+	soc {
+		#address-cells = < 0x1 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:91 */
+		#size-cells = < 0x1 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:92 */
+		compatible = "simple-bus";           /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:25 */
+		interrupt-parent = < &cpuapp_nvic >; /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:26 */
+		ranges;                              /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:27 */
+
+		/* node '/soc/ficr@ffc000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:94 */
+		ficr: ficr@ffc000 {
+			compatible = "nordic,nrf-ficr"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:95 */
+			reg = < 0xffc000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:96 */
+			#nordic,ficr-cells = < 0x1 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:97 */
+		};
+
+		/* node '/soc/memory@20000000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:114 */
+		cpuapp_sram: memory@20000000 {
+			compatible = "mmio-sram";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:115 */
+			reg = < 0x20000000 0x7fe40 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:116 */
+			#address-cells = < 0x1 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:117 */
+			#size-cells = < 0x1 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:118 */
+			ranges = < 0x0 0x20000000 0x7fe40 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:119 */
+			status = "okay";                     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:33 */
+
+			/* node '/soc/memory@20000000/image_s@0' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:20 */
+			sram0_s: image_s@0 {
+				#address-cells = < 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:21 */
+				#size-cells = < 0x1 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:22 */
+				reg = < 0x0 0x40000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:24 */
+				ranges = < 0x0 0x0 0x40000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:25 */
+			};
+
+			/* node '/soc/memory@20000000/image_ns@40000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:28 */
+			sram0_ns: image_ns@40000 {
+				#address-cells = < 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:29 */
+				#size-cells = < 0x1 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:30 */
+				reg = < 0x40000 0x3f000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:32 */
+				ranges = < 0x0 0x40000 0x3f000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:33 */
+			};
+		};
+
+		/* node '/soc/peripheral@40000000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:132 */
+		global_peripherals: peripheral@40000000 {
+			reg = < 0x40000000 0x10000000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:133 */
+			#address-cells = < 0x1 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:134 */
+			#size-cells = < 0x1 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:135 */
+			ranges = < 0x0 0x40000000 0x10000000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:136 */
+
+			/* node '/soc/peripheral@40000000/dppic@42000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:145 */
+			dppic00: dppic@42000 {
+				compatible = "nordic,nrf-dppic"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:146 */
+				reg = < 0x42000 0x808 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:147 */
+				channels = < 0x10 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:149 */
+				groups = < 0x2 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:150 */
+				status = "okay";                 /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:97 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@44000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:153 */
+			ppib00: ppib@44000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:154 */
+				reg = < 0x44000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:155 */
+				channels = < 0xc >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:157 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:113 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@45000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:160 */
+			ppib01: ppib@45000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:161 */
+				reg = < 0x45000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:162 */
+				channels = < 0x8 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:164 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:117 */
+			};
+
+			/* node '/soc/peripheral@40000000/vpr@4c000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:167 */
+			cpuflpr_vpr: vpr@4c000 {
+				compatible = "nordic,nrf-vpr-coprocessor"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:168 */
+				reg = < 0x4c000 0x1000 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:169 */
+				ranges = < 0x0 0x4c000 0x1000 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:170 */
+				#address-cells = < 0x1 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:171 */
+				#size-cells = < 0x1 >;                     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:172 */
+				status = "disabled";                       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:173 */
+				enable-secure;                             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:174 */
+				hibernation-ram-block = < 0x20 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:175 */
+
+				/* node '/soc/peripheral@40000000/vpr@4c000/mailbox@1' defined in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:46 */
+				cpuapp_vevif_rx: mailbox@1 {
+					compatible = "nordic,nrf-vevif-event-rx"; /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:47 */
+					reg = < 0x1 0x1000 >;                     /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:48 */
+					status = "disabled";                      /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:49 */
+					interrupts = < 0x4c 0x1 >;                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:50 */
+					#mbox-cells = < 0x1 >;                    /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:51 */
+					nordic,events = < 0x1 >;                  /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:52 */
+					nordic,events-mask = < 0x100000 >;        /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:53 */
+				};
+
+				/* node '/soc/peripheral@40000000/vpr@4c000/mailbox@0' defined in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:56 */
+				cpuapp_vevif_tx: mailbox@0 {
+					compatible = "nordic,nrf-vevif-task-tx"; /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:57 */
+					reg = < 0x0 0x1000 >;                    /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:58 */
+					#mbox-cells = < 0x1 >;                   /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:59 */
+					nordic,tasks = < 0x7 >;                  /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:60 */
+					nordic,tasks-mask = < 0x7f0000 >;        /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:61 */
+					status = "disabled";                     /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:62 */
+				};
+			};
+
+			/* node '/soc/peripheral@40000000/spi@4d000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:187 */
+			spi00: spi@4d000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:194 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:195 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:196 */
+				reg = < 0x4d000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:197 */
+				interrupts = < 0x4d 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:198 */
+				clocks = < &hfpll >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:199 */
+				max-frequency = < 0x1e84800 >;  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:200 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:201 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:202 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:203 */
+				status = "okay";                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:123 */
+				cs-gpios = < &gpio2 0x5 0x1 >;  /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:124 */
+				pinctrl-0 = < &spi00_default >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:125 */
+				pinctrl-1 = < &spi00_sleep >;   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:126 */
+				pinctrl-names = "default",
+				                "sleep";        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:127 */
+
+				/* node '/soc/peripheral@40000000/spi@4d000/mx25r6435f@0' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:129 */
+				mx25r64: mx25r6435f@0 {
+					compatible = "jedec,spi-nor";                                                                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:130 */
+					status = "disabled";                                                                          /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:131 */
+					reg = < 0x0 >;                                                                                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:132 */
+					spi-max-frequency = < 0x7a1200 >;                                                             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:133 */
+					jedec-id = [ C2 28 17 ];                                                                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:134 */
+					sfdp-bfp = [ E5 20 F1 FF FF FF FF 03 44 EB 08 6B 08 3B 04 BB EE FF FF FF FF FF 00 FF FF FF 00
+					             FF 0C 20 0F 52 10 D8 00 FF 23 72 F5 00 82 ED 04 CC 44 83 48 44 30 B0 30 B0 F7 C4
+					             D5 5C 00 BE 29 FF F0 D0 FF FF ];                                                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:135 */
+					size = < 0x4000000 >;                                                                         /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:139 */
+					has-dpd;                                                                                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:140 */
+					t-enter-dpd = < 0x2710 >;                                                                     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:141 */
+					t-exit-dpd = < 0x88b8 >;                                                                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:142 */
+					reset-gpios = < &gpio2 0x0 0x1 >;                                                             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:143 */
+				};
+			};
+
+			/* node '/soc/peripheral@40000000/uart@4d000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:207 */
+			uart00: uart@4d000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:208 */
+				reg = < 0x4d000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:209 */
+				interrupts = < 0x4d 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:210 */
+				clocks = < &hfpll >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:211 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:212 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:213 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:214 */
+			};
+
+			/* node '/soc/peripheral@40000000/gpio@50400' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:217 */
+			gpio2: gpio@50400 {
+				compatible = "nordic,nrf-gpio"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:218 */
+				gpio-controller;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:219 */
+				reg = < 0x50400 0x300 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:220 */
+				#gpio-cells = < 0x2 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:221 */
+				ngpios = < 0xb >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:222 */
+				port = < 0x2 >;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:224 */
+				status = "okay";                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:83 */
+				phandle = < 0x3 >;              /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:124 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@55000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:227 */
+			timer00: timer@55000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:228 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:229 */
+				reg = < 0x55000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:230 */
+				cc-num = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:231 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:232 */
+				interrupts = < 0x55 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:233 */
+				clocks = < &hfpll >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:234 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:235 */
+			};
+
+			/* node '/soc/peripheral@40000000/usbhs_wrapper@5a000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:238 */
+			usbhs_wrapper: usbhs_wrapper@5a000 {
+				compatible = "nordic,nrf-usbhs-wrapper"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:239 */
+				reg = < 0x5a000 0x1000 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:240 */
+				ranges = < 0x20000 0x20000 0x1a000 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:241 */
+				#address-cells = < 0x1 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:242 */
+				#size-cells = < 0x1 >;                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:243 */
+				regulator = < &vregusb >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:244 */
+
+				/* node '/soc/peripheral@40000000/usbhs_wrapper@5a000/usbhs@20000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:246 */
+				usbhs: zephyr_udc0: usbhs@20000 {
+					compatible = "nordic,nrf-usbhs-nrf54l",
+					             "snps,dwc2";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:247 */
+					reg = < 0x20000 0x1a000 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:248 */
+					interrupts = < 0x5a 0x1 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:249 */
+					num-in-eps = < 0x10 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:250 */
+					num-out-eps = < 0x10 >;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:251 */
+					ghwcfg1 = < 0x0 >;                      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:252 */
+					ghwcfg2 = < 0x22affc52 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:253 */
+					ghwcfg4 = < 0x3e10aa60 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:254 */
+					status = "okay";                        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:115 */
+				};
+
+				/* node '/soc/peripheral@40000000/usbhs_wrapper@5a000/usbhs_bc12' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:258 */
+				usbhs_bc12: usbhs_bc12 {
+					compatible = "nordic,nrf-usbhs-bc12"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:259 */
+					charging-mode = "BC12_TYPE_NONE";     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:260 */
+					status = "okay";                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:119 */
+				};
+			};
+
+			/* node '/soc/peripheral@40000000/dppic@82000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:265 */
+			dppic10: dppic@82000 {
+				compatible = "nordic,nrf-dppic"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:266 */
+				reg = < 0x82000 0x808 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:267 */
+				channels = < 0x18 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:269 */
+				groups = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:270 */
+				status = "okay";                 /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:101 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@83000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:273 */
+			ppib10: ppib@83000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:274 */
+				reg = < 0x83000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:275 */
+				channels = < 0xc >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:277 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:121 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@84000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:280 */
+			ppib11: ppib@84000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:281 */
+				reg = < 0x84000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:282 */
+				channels = < 0x10 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:284 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:125 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@85000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:287 */
+			timer10: timer@85000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:288 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:289 */
+				reg = < 0x85000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:290 */
+				cc-num = < 0x8 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:291 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:292 */
+				interrupts = < 0x85 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:293 */
+				clocks = < &hfxo >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:294 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:295 */
+			};
+
+			/* node '/soc/peripheral@40000000/egu@87000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:298 */
+			egu10: egu@87000 {
+				compatible = "nordic,nrf-egu"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:299 */
+				reg = < 0x87000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:300 */
+				interrupts = < 0x87 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:301 */
+				status = "disabled";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:302 */
+			};
+
+			/* node '/soc/peripheral@40000000/radio@8a000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:305 */
+			radio: radio@8a000 {
+				compatible = "nordic,nrf-radio"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:306 */
+				reg = < 0x8a000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:307 */
+				interrupts = < 0x8a 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:308 */
+				dfe-supported;                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:310 */
+				ieee802154-supported;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:311 */
+				ble-2mbps-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:312 */
+				ble-coded-phy-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:313 */
+				ble-cs-supported;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:314 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:99 */
+
+				/* node '/soc/peripheral@40000000/radio@8a000/ieee802154' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:316 */
+				ieee802154: ieee802154 {
+					compatible = "nordic,nrf-ieee802154"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:317 */
+					status = "okay";                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:111 */
+				};
+
+				/* node '/soc/peripheral@40000000/radio@8a000/bt_hci_sdc' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:324 */
+				bt_hci_sdc: bt_hci_sdc {
+					compatible = "nordic,bt-hci-sdc"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:325 */
+					status = "okay";                  /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:42 */
+				};
+
+				/* node '/soc/peripheral@40000000/radio@8a000/bt_hci_controller' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:329 */
+				bt_hci_controller: bt_hci_controller {
+					compatible = "zephyr,bt-hci-ll-sw-split"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:330 */
+					status = "disabled";                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:32 */
+				};
+			};
+
+			/* node '/soc/peripheral@40000000/dppic@c2000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:335 */
+			dppic20: dppic@c2000 {
+				compatible = "nordic,nrf-dppic"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:336 */
+				reg = < 0xc2000 0x808 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:337 */
+				channels = < 0x10 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:339 */
+				groups = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:340 */
+				status = "okay";                 /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:105 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@c3000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:343 */
+			ppib20: ppib@c3000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:344 */
+				reg = < 0xc3000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:345 */
+				channels = < 0x8 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:347 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:129 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@c4000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:350 */
+			ppib21: ppib@c4000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:351 */
+				reg = < 0xc4000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:352 */
+				channels = < 0x10 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:354 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:133 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@c5000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:357 */
+			ppib22: ppib@c5000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:358 */
+				reg = < 0xc5000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:359 */
+				channels = < 0x4 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:361 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:137 */
+			};
+
+			/* node '/soc/peripheral@40000000/i2c@c6000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:364 */
+			i2c20: i2c@c6000 {
+				compatible = "nordic,nrf-twim";    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:365 */
+				#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:366 */
+				#size-cells = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:367 */
+				reg = < 0xc6000 0x1000 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:368 */
+				interrupts = < 0xc6 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:369 */
+				easydma-maxcnt-bits = < 0x10 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:370 */
+				clock-tolerance-percent = < 0x6 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:371 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:372 */
+				zephyr,pm-device-runtime-auto;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:373 */
+			};
+
+			/* node '/soc/peripheral@40000000/spi@c6000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:376 */
+			spi20: spi@c6000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:383 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:384 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:385 */
+				reg = < 0xc6000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:386 */
+				interrupts = < 0xc6 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:387 */
+				max-frequency = < 0x7a1200 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:388 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:389 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:390 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:391 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:392 */
+			};
+
+			/* node '/soc/peripheral@40000000/uart@c6000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:395 */
+			uart20: uart@c6000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:396 */
+				reg = < 0xc6000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:397 */
+				interrupts = < 0xc6 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:398 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:400 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:401 */
+				current-speed = < 0x1c200 >;     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:120 */
+				pinctrl-0 = < &uart20_default >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:121 */
+				pinctrl-1 = < &uart20_sleep >;   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:122 */
+				pinctrl-names = "default",
+				                "sleep";         /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:123 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:67 */
+			};
+
+			/* node '/soc/peripheral@40000000/i2c@c7000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:404 */
+			i2c21: i2c@c7000 {
+				compatible = "nordic,nrf-twim";    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:405 */
+				#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:406 */
+				#size-cells = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:407 */
+				reg = < 0xc7000 0x1000 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:408 */
+				interrupts = < 0xc7 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:409 */
+				easydma-maxcnt-bits = < 0x10 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:410 */
+				clock-tolerance-percent = < 0x6 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:411 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:412 */
+				zephyr,pm-device-runtime-auto;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:413 */
+			};
+
+			/* node '/soc/peripheral@40000000/spi@c7000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:416 */
+			spi21: spi@c7000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:423 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:424 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:425 */
+				reg = < 0xc7000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:426 */
+				interrupts = < 0xc7 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:427 */
+				max-frequency = < 0x7a1200 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:428 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:429 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:430 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:431 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:432 */
+			};
+
+			/* node '/soc/peripheral@40000000/uart@c7000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:435 */
+			uart21: uart@c7000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:436 */
+				reg = < 0xc7000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:437 */
+				interrupts = < 0xc7 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:438 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:439 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:440 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:441 */
+			};
+
+			/* node '/soc/peripheral@40000000/i2c@c8000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:444 */
+			i2c22: i2c@c8000 {
+				compatible = "nordic,nrf-twim";    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:445 */
+				#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:446 */
+				#size-cells = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:447 */
+				reg = < 0xc8000 0x1000 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:448 */
+				interrupts = < 0xc8 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:449 */
+				easydma-maxcnt-bits = < 0x10 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:450 */
+				clock-tolerance-percent = < 0x6 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:451 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:452 */
+				zephyr,pm-device-runtime-auto;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:453 */
+			};
+
+			/* node '/soc/peripheral@40000000/spi@c8000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:456 */
+			spi22: nordic_expansion_spi: spi@c8000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:463 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:464 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:465 */
+				reg = < 0xc8000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:466 */
+				interrupts = < 0xc8 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:467 */
+				max-frequency = < 0x7a1200 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:468 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:469 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:470 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:471 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:472 */
+				cs-gpios = < &gpio3 0x2 0x1 >;  /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:156 */
+				pinctrl-0 = < &spi22_default >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:157 */
+				pinctrl-1 = < &spi22_sleep >;   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:158 */
+				pinctrl-names = "default",
+				                "sleep";        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:159 */
+			};
+
+			/* node '/soc/peripheral@40000000/uart@c8000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:475 */
+			uart22: uart@c8000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:476 */
+				reg = < 0xc8000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:477 */
+				interrupts = < 0xc8 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:478 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:479 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:480 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:481 */
+			};
+
+			/* node '/soc/peripheral@40000000/egu@c9000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:484 */
+			egu20: egu@c9000 {
+				compatible = "nordic,nrf-egu"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:485 */
+				reg = < 0xc9000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:486 */
+				interrupts = < 0xc9 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:487 */
+				status = "disabled";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:488 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@ca000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:491 */
+			timer20: timer@ca000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:492 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:493 */
+				reg = < 0xca000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:494 */
+				cc-num = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:495 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:496 */
+				interrupts = < 0xca 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:497 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:498 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@cb000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:501 */
+			timer21: timer@cb000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:502 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:503 */
+				reg = < 0xcb000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:504 */
+				cc-num = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:505 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:506 */
+				interrupts = < 0xcb 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:507 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:508 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@cc000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:511 */
+			timer22: timer@cc000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:512 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:513 */
+				reg = < 0xcc000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:514 */
+				cc-num = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:515 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:516 */
+				interrupts = < 0xcc 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:517 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:518 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@cd000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:521 */
+			timer23: timer@cd000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:522 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:523 */
+				reg = < 0xcd000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:524 */
+				cc-num = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:525 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:526 */
+				interrupts = < 0xcd 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:527 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:528 */
+			};
+
+			/* node '/soc/peripheral@40000000/timer@ce000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:531 */
+			timer24: timer@ce000 {
+				compatible = "nordic,nrf-timer"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:532 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:533 */
+				reg = < 0xce000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:534 */
+				cc-num = < 0x6 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:535 */
+				max-bit-width = < 0x20 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:536 */
+				interrupts = < 0xce 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:537 */
+				prescaler = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:538 */
+			};
+
+			/* node '/soc/peripheral@40000000/pdm@d0000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:541 */
+			pdm20: pdm@d0000 {
+				compatible = "nordic,nrf-pdm";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:542 */
+				reg = < 0xd0000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:544 */
+				interrupts = < 0xd0 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:545 */
+				status = "okay";                /* in ./app.overlay:31 */
+				pinctrl-0 = < &pdm20_default >; /* in ./app.overlay:32 */
+				pinctrl-1 = < &pdm20_sleep >;   /* in ./app.overlay:33 */
+				pinctrl-names = "default",
+				                "sleep";        /* in ./app.overlay:34 */
+			};
+
+			/* node '/soc/peripheral@40000000/pdm@d1000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:548 */
+			pdm21: pdm@d1000 {
+				compatible = "nordic,nrf-pdm"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:549 */
+				status = "disabled";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:550 */
+				reg = < 0xd1000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:551 */
+				interrupts = < 0xd1 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:552 */
+			};
+
+			/* node '/soc/peripheral@40000000/pwm@d2000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:555 */
+			pwm20: pwm@d2000 {
+				compatible = "nordic,nrf-pwm";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:556 */
+				reg = < 0xd2000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:558 */
+				interrupts = < 0xd2 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:559 */
+				#pwm-cells = < 0x3 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:560 */
+				status = "okay";                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:134 */
+				pinctrl-0 = < &pwm20_default >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:135 */
+				pinctrl-1 = < &pwm20_sleep >;   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:136 */
+				pinctrl-names = "default",
+				                "sleep";        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:137 */
+				phandle = < 0x1b >;             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:44 */
+			};
+
+			/* node '/soc/peripheral@40000000/pwm@d3000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:563 */
+			pwm21: nordic_expansion_pwm: pwm@d3000 {
+				compatible = "nordic,nrf-pwm";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:564 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:565 */
+				reg = < 0xd3000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:566 */
+				interrupts = < 0xd3 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:567 */
+				#pwm-cells = < 0x3 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:568 */
+				pinctrl-0 = < &pwm21_default >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:163 */
+				pinctrl-1 = < &pwm21_sleep >;   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:164 */
+				pinctrl-names = "default",
+				                "sleep";        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:165 */
+			};
+
+			/* node '/soc/peripheral@40000000/pwm@d4000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:571 */
+			pwm22: pwm@d4000 {
+				compatible = "nordic,nrf-pwm"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:572 */
+				status = "disabled";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:573 */
+				reg = < 0xd4000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:574 */
+				interrupts = < 0xd4 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:575 */
+				#pwm-cells = < 0x3 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:576 */
+			};
+
+			/* node '/soc/peripheral@40000000/adc@d5000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:579 */
+			adc: adc@d5000 {
+				compatible = "nordic,nrf-saadc"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:580 */
+				reg = < 0xd5000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:581 */
+				interrupts = < 0xd5 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:582 */
+				#io-channel-cells = < 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:584 */
+				zephyr,pm-device-runtime-auto;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:585 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:148 */
+			};
+
+			/* node '/soc/peripheral@40000000/nfct@d6000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:588 */
+			nfct: nfct@d6000 {
+				compatible = "nordic,nrf-nfct-v2"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:589 */
+				reg = < 0xd6000 0x1000 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:590 */
+				interrupts = < 0xd6 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:591 */
+				status = "okay";                   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:71 */
+			};
+
+			/* node '/soc/peripheral@40000000/temp@d7000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:595 */
+			temp: temp_sensor: temp@d7000 {
+				compatible = "nordic,nrf-temp"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:596 */
+				reg = < 0xd7000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:597 */
+				interrupts = < 0xd7 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:598 */
+				status = "okay";                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:103 */
+			};
+
+			/* node '/soc/peripheral@40000000/gpio@d8200' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:602 */
+			gpio1: gpio@d8200 {
+				compatible = "nordic,nrf-gpio";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:603 */
+				gpio-controller;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:604 */
+				reg = < 0xd8200 0x300 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:605 */
+				#gpio-cells = < 0x2 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:606 */
+				ngpios = < 0x20 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:607 */
+				port = < 0x1 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:609 */
+				gpiote-instance = < &gpiote20 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:610 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:79 */
+				phandle = < 0x1a >;              /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:14 */
+			};
+
+			/* node '/soc/peripheral@40000000/gpio@d8600' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:613 */
+			gpio3: gpio@d8600 {
+				compatible = "nordic,nrf-gpio";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:614 */
+				gpio-controller;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:615 */
+				reg = < 0xd8600 0x300 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:616 */
+				#gpio-cells = < 0x2 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:617 */
+				ngpios = < 0xd >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:618 */
+				port = < 0x3 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:620 */
+				gpiote-instance = < &gpiote20 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:621 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:87 */
+				phandle = < 0xa >;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:156 */
+			};
+
+			/* node '/soc/peripheral@40000000/gpiote@da000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:624 */
+			gpiote20: gpiote@da000 {
+				compatible = "nordic,nrf-gpiote"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:625 */
+				reg = < 0xda000 0x1000 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:626 */
+				instance = < 0x14 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:628 */
+				interrupts = < 0xda 0x1 >;        /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:82 */
+				status = "okay";                  /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:91 */
+				phandle = < 0x13 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:610 */
+			};
+
+			/* node '/soc/peripheral@40000000/qdec@e0000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:631 */
+			qdec20: qdec@e0000 {
+				compatible = "nordic,nrf-qdec"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:632 */
+				reg = < 0xe0000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:633 */
+				interrupts = < 0xe0 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:634 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:635 */
+			};
+
+			/* node '/soc/peripheral@40000000/qdec@e1000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:638 */
+			qdec21: qdec@e1000 {
+				compatible = "nordic,nrf-qdec"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:639 */
+				reg = < 0xe1000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:640 */
+				interrupts = < 0xe1 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:641 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:642 */
+			};
+
+			/* node '/soc/peripheral@40000000/grtc@e2000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:645 */
+			grtc: grtc@e2000 {
+				compatible = "nordic,nrf-grtc";                                       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:646 */
+				reg = < 0xe2000 0x1000 >;                                             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:647 */
+				cc-num = < 0xc >;                                                     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:648 */
+				clocks = < &lfxo >,
+				         < &pclk >;                                                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:649 */
+				clock-names = "lfclock",
+				              "hfclock";                                              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:650 */
+				extended-channels = < 0x0 >;                                          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:652 */
+				interrupts = < 0xe3 0x1 >,
+				             < 0xe5 0x1 >;                                            /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:73 */
+				owned-channels = < 0x0 0x1 0x2 0x3 0x4 0x5 0x6 0x7 0x8 0x9 0xa 0xb >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:60 */
+				child-owned-channels = < 0x3 0x4 0x7 0x8 0x9 0xa 0xb >;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:62 */
+				status = "okay";                                                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:63 */
+			};
+
+			/* node '/soc/peripheral@40000000/tdm@e8000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:655 */
+			tdm: tdm@e8000 {
+				compatible = "nordic,nrf-tdm"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:656 */
+				easydma-maxcnt-bits = < 0xf >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:657 */
+				#address-cells = < 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:658 */
+				#size-cells = < 0x0 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:659 */
+				reg = < 0xe8000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:660 */
+				interrupts = < 0xe8 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:661 */
+				status = "disabled";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:662 */
+				clocks = < &pclk32m >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:663 */
+			};
+
+			/* node '/soc/peripheral@40000000/i2c@ed000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:666 */
+			i2c23: i2c@ed000 {
+				compatible = "nordic,nrf-twim";    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:667 */
+				#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:668 */
+				#size-cells = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:669 */
+				reg = < 0xed000 0x1000 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:670 */
+				interrupts = < 0xed 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:671 */
+				easydma-maxcnt-bits = < 0x10 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:672 */
+				clock-tolerance-percent = < 0x6 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:673 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:674 */
+				zephyr,pm-device-runtime-auto;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:675 */
+			};
+
+			/* node '/soc/peripheral@40000000/spi@ed000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:678 */
+			spi23: spi@ed000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:685 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:686 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:687 */
+				reg = < 0xed000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:688 */
+				interrupts = < 0xed 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:689 */
+				max-frequency = < 0x7a1200 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:690 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:691 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:692 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:693 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:694 */
+			};
+
+			/* node '/soc/peripheral@40000000/uart@ed000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:697 */
+			uart23: uart@ed000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:698 */
+				reg = < 0xed000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:699 */
+				interrupts = < 0xed 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:700 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:701 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:702 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:703 */
+			};
+
+			/* node '/soc/peripheral@40000000/i2c@ee000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:706 */
+			i2c24: i2c@ee000 {
+				compatible = "nordic,nrf-twim";    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:707 */
+				#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:708 */
+				#size-cells = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:709 */
+				reg = < 0xee000 0x1000 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:710 */
+				interrupts = < 0xee 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:711 */
+				easydma-maxcnt-bits = < 0x10 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:712 */
+				clock-tolerance-percent = < 0x6 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:713 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:714 */
+				zephyr,pm-device-runtime-auto;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:715 */
+			};
+
+			/* node '/soc/peripheral@40000000/spi@ee000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:718 */
+			spi24: spi@ee000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:725 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:726 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:727 */
+				reg = < 0xee000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:728 */
+				interrupts = < 0xee 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:729 */
+				max-frequency = < 0x7a1200 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:730 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:731 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:732 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:733 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:734 */
+			};
+
+			/* node '/soc/peripheral@40000000/uart@ee000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:737 */
+			uart24: uart@ee000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:738 */
+				reg = < 0xee000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:739 */
+				interrupts = < 0xee 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:740 */
+				status = "disabled";             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:741 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:742 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:743 */
+			};
+
+			/* node '/soc/peripheral@40000000/dppic@102000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:746 */
+			dppic30: dppic@102000 {
+				compatible = "nordic,nrf-dppic"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:747 */
+				reg = < 0x102000 0x808 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:748 */
+				channels = < 0x4 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:750 */
+				groups = < 0x2 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:751 */
+				status = "okay";                 /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:109 */
+			};
+
+			/* node '/soc/peripheral@40000000/ppib@103000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:754 */
+			ppib30: ppib@103000 {
+				compatible = "nordic,nrf-ppib"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:755 */
+				reg = < 0x103000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:756 */
+				channels = < 0x4 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:758 */
+				status = "okay";                /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:141 */
+			};
+
+			/* node '/soc/peripheral@40000000/i2c@104000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:761 */
+			i2c30: i2c@104000 {
+				compatible = "nordic,nrf-twim";    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:762 */
+				#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:763 */
+				#size-cells = < 0x0 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:764 */
+				reg = < 0x104000 0x1000 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:765 */
+				interrupts = < 0x104 0x1 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:766 */
+				easydma-maxcnt-bits = < 0x10 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:767 */
+				clock-tolerance-percent = < 0x6 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:768 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:769 */
+				zephyr,pm-device-runtime-auto;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:770 */
+			};
+
+			/* node '/soc/peripheral@40000000/spi@104000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:773 */
+			spi30: spi@104000 {
+				compatible = "nordic,nrf-spim"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:780 */
+				#address-cells = < 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:781 */
+				#size-cells = < 0x0 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:782 */
+				reg = < 0x104000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:783 */
+				interrupts = < 0x104 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:784 */
+				max-frequency = < 0x7a1200 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:785 */
+				easydma-maxcnt-bits = < 0x10 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:786 */
+				rx-delay-supported;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:787 */
+				rx-delay = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:788 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:789 */
+			};
+
+			/* node '/soc/peripheral@40000000/uart@104000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:792 */
+			uart30: uart@104000 {
+				compatible = "nordic,nrf-uarte"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:793 */
+				reg = < 0x104000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:794 */
+				interrupts = < 0x104 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:795 */
+				endtx-stoptx-supported;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:797 */
+				frame-timeout-supported;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:798 */
+				current-speed = < 0x1c200 >;     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:127 */
+				pinctrl-0 = < &uart30_default >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:128 */
+				pinctrl-1 = < &uart30_sleep >;   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:129 */
+				pinctrl-names = "default",
+				                "sleep";         /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:130 */
+				status = "disabled";             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:37 */
+			};
+
+			/* node '/soc/peripheral@40000000/comparator@106000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:801 */
+			comp: comparator@106000 {
+				compatible = "nordic,nrf-comp"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:806 */
+				reg = < 0x106000 0x1000 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:807 */
+				status = "disabled";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:808 */
+				interrupts = < 0x106 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:809 */
+			};
+
+			/* node '/soc/peripheral@40000000/watchdog@109000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:823 */
+			wdt31: watchdog@109000 {
+				compatible = "nordic,nrf-wdt"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:824 */
+				reg = < 0x109000 0x620 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:825 */
+				interrupts = < 0x109 0x1 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:826 */
+				status = "disabled";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:827 */
+			};
+
+			/* node '/soc/peripheral@40000000/gpio@10a000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:830 */
+			gpio0: gpio@10a000 {
+				compatible = "nordic,nrf-gpio";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:831 */
+				gpio-controller;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:832 */
+				reg = < 0x10a000 0x300 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:833 */
+				#gpio-cells = < 0x2 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:834 */
+				ngpios = < 0xa >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:835 */
+				port = < 0x0 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:837 */
+				gpiote-instance = < &gpiote30 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:838 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:75 */
+				phandle = < 0x1c >;              /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:70 */
+			};
+
+			/* node '/soc/peripheral@40000000/gpiote@10c000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:841 */
+			gpiote30: gpiote@10c000 {
+				compatible = "nordic,nrf-gpiote"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:842 */
+				reg = < 0x10c000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:843 */
+				instance = < 0x1e >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:845 */
+				interrupts = < 0x10c 0x1 >;       /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:90 */
+				status = "okay";                  /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:95 */
+				phandle = < 0x19 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:838 */
+			};
+
+			/* node '/soc/peripheral@40000000/clock@10e000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:848 */
+			clock: clock@10e000 {
+				compatible = "nordic,nrf-clock"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:849 */
+				reg = < 0x10e000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:850 */
+				interrupts = < 0x10e 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:851 */
+				status = "okay";                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:107 */
+			};
+
+			/* node '/soc/peripheral@40000000/power@10e000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:855 */
+			power: power@10e000 {
+				compatible = "nordic,nrf-power";  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:856 */
+				reg = < 0x10e000 0x1000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:857 */
+				ranges = < 0x0 0x10e000 0x1000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:858 */
+				interrupts = < 0x10e 0x1 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:859 */
+				status = "disabled";              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:860 */
+				#address-cells = < 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:861 */
+				#size-cells = < 0x1 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:862 */
+
+				/* node '/soc/peripheral@40000000/power@10e000/gpregret1@500' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:864 */
+				gpregret1: gpregret1@500 {
+					#address-cells = < 0x1 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:865 */
+					#size-cells = < 0x1 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:866 */
+					compatible = "nordic,nrf-gpregret"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:867 */
+					reg = < 0x500 0x1 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:868 */
+					status = "disabled";                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:869 */
+				};
+
+				/* node '/soc/peripheral@40000000/power@10e000/gpregret2@504' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:872 */
+				gpregret2: gpregret2@504 {
+					#address-cells = < 0x1 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:873 */
+					#size-cells = < 0x1 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:874 */
+					compatible = "nordic,nrf-gpregret"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:875 */
+					reg = < 0x504 0x1 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:876 */
+					status = "disabled";                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:877 */
+				};
+			};
+
+			/* node '/soc/peripheral@40000000/regulator@120000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:881 */
+			regulators: regulator@120000 {
+				compatible = "nordic,nrf54l-regulators"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:882 */
+				reg = < 0x120000 0x2000 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:883 */
+				ranges = < 0x0 0x120000 0x2000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:884 */
+				status = "disabled";                     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:885 */
+				#address-cells = < 0x1 >;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:886 */
+				#size-cells = < 0x1 >;                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:887 */
+
+				/* node '/soc/peripheral@40000000/regulator@120000/regulator@0' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:889 */
+				vregmain: regulator@0 {
+					compatible = "nordic,nrf5x-regulator"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:890 */
+					reg = < 0x0 0x1000 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:891 */
+					regulator-name = "VREGMAIN";           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:893 */
+					status = "okay";                       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:51 */
+					regulator-initial-mode = < 0x1 >;      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:52 */
+				};
+
+				/* node '/soc/peripheral@40000000/regulator@120000/regulator@1000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:897 */
+				vregusb: regulator@1000 {
+					compatible = "nordic,vregusb-regulator"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:898 */
+					reg = < 0x1000 0x1000 >;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:899 */
+					regulator-name = "VREGUSB";              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:901 */
+					interrupts = < 0x121 0x1 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:902 */
+					status = "okay";                         /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:56 */
+					phandle = < 0x6 >;                       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:244 */
+				};
+			};
+		};
+
+		/* node '/soc/rram-controller@5004e000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:907 */
+		rram_controller: rram-controller@5004e000 {
+			compatible = "nordic,rram-controller"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:908 */
+			reg = < 0x5004e000 0x1000 >;           /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:909 */
+			ranges;                                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:910 */
+			interrupts = < 0x4e 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:911 */
+			#address-cells = < 0x1 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:912 */
+			#size-cells = < 0x1 >;                 /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:913 */
+
+			/* node '/soc/rram-controller@5004e000/rram@0' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:915 */
+			cpuapp_rram: rram@0 {
+				compatible = "soc-nv-flash";   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:916 */
+				reg = < 0x0 0x1fd000 >;        /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:917 */
+				ranges = < 0x0 0x0 0x1fd000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:918 */
+				erase-block-size = < 0x1000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:919 */
+				write-block-size = < 0x10 >;   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:920 */
+				#address-cells = < 0x1 >;      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:921 */
+				#size-cells = < 0x1 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:922 */
+
+				/* node '/soc/rram-controller@5004e000/rram@0/partitions' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:50 */
+				partitions {
+					ranges;                   /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:51 */
+					#address-cells = < 0x1 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:52 */
+					#size-cells = < 0x1 >;    /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:53 */
+
+					/* node '/soc/rram-controller@5004e000/rram@0/partitions/partition@0' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:61 */
+					slot0_partition: partition@0 {
+						compatible = "zephyr,mapped-partition"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:62 */
+						label = "image-0";                      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:63 */
+						reg = < 0x0 0x80000 >;                  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:64 */
+					};
+
+					/* node '/soc/rram-controller@5004e000/rram@0/partitions/partition@80000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:67 */
+					tfm_ps_partition: partition@80000 {
+						compatible = "zephyr,mapped-partition"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:68 */
+						label = "tfm-ps";                       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:69 */
+						reg = < 0x80000 0x4000 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:70 */
+					};
+
+					/* node '/soc/rram-controller@5004e000/rram@0/partitions/partition@84000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:73 */
+					tfm_its_partition: partition@84000 {
+						compatible = "zephyr,mapped-partition"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:74 */
+						label = "tfm-its";                      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:75 */
+						reg = < 0x84000 0x4000 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:76 */
+					};
+
+					/* node '/soc/rram-controller@5004e000/rram@0/partitions/partition@88000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:79 */
+					tfm_otp_partition: partition@88000 {
+						compatible = "zephyr,mapped-partition"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:80 */
+						label = "tfm-otp";                      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:81 */
+						reg = < 0x88000 0x2000 >;               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:82 */
+					};
+
+					/* node '/soc/rram-controller@5004e000/rram@0/partitions/partition@8a000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:85 */
+					slot0_ns_partition: partition@8a000 {
+						compatible = "zephyr,mapped-partition"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:86 */
+						label = "image-0-nonsecure";            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:87 */
+						reg = < 0x8a000 0x16b000 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:88 */
+					};
+
+					/* node '/soc/rram-controller@5004e000/rram@0/partitions/partition@1f5000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:91 */
+					storage_partition: partition@1f5000 {
+						compatible = "zephyr,mapped-partition"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:92 */
+						label = "storage";                      /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:93 */
+						reg = < 0x1f5000 0x8000 >;              /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b_cpuapp_ns_partition.dtsi:94 */
+					};
+				};
+			};
+		};
+
+		/* node '/soc/memory@50041000' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:926 */
+		nrf_mpc: memory@50041000 {
+			compatible = "nordic,nrf-mpc";     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:927 */
+			reg = < 0x50041000 0x1000 >;       /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:928 */
+			#address-cells = < 0x1 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:929 */
+			#size-cells = < 0x1 >;             /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:930 */
+			override-num = < 0x5 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:931 */
+			override-granularity = < 0x1000 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:932 */
+		};
+
+		/* node '/soc/cpuapp-ppb-bus' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:935 */
+		cpuapp_ppb: cpuapp-ppb-bus {
+			#address-cells = < 0x1 >;  /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:936 */
+			#size-cells = < 0x1 >;     /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:937 */
+			compatible = "simple-bus"; /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:67 */
+			ranges;                    /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:68 */
+
+			/* node '/soc/cpuapp-ppb-bus/interrupt-controller@e000e100' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:939 */
+			cpuapp_nvic: nvic: interrupt-controller@e000e100 {
+				#address-cells = < 0x1 >;            /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:940 */
+				compatible = "arm,v8m-nvic";         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:941 */
+				reg = < 0xe000e100 0xc00 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:942 */
+				arm,num-irq-priority-bits = < 0x3 >; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:943 */
+				interrupt-controller;                /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:944 */
+				#interrupt-cells = < 0x2 >;          /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:945 */
+				phandle = < 0x2 >;                   /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:26 */
+			};
+
+			/* node '/soc/cpuapp-ppb-bus/timer@e000e010' defined in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:948 */
+			cpuapp_systick: systick: timer@e000e010 {
+				compatible = "arm,armv8m-systick"; /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:949 */
+				reg = < 0xe000e010 0x10 >;         /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:950 */
+				status = "disabled";               /* in zephyr\dts\vendor\nordic\nrf54lm20_a_b.dtsi:951 */
+			};
+		};
+	};
+
+	/* node '/chosen' defined in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:19 */
+	chosen {
+		zephyr,bt-hci = &bt_hci_sdc;                 /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:20 */
+		zephyr,console = &uart20;                    /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:14 */
+		zephyr,shell-uart = &uart20;                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:15 */
+		zephyr,uart-mcumgr = &uart20;                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:16 */
+		zephyr,bt-mon-uart = &uart20;                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:17 */
+		zephyr,bt-c2h-uart = &uart20;                /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:18 */
+		zephyr,flash-controller = &rram_controller;  /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:19 */
+		zephyr,flash = &cpuapp_rram;                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:20 */
+		zephyr,ieee802154 = &ieee802154;             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:21 */
+		zephyr,usb-bc12 = &usbhs_bc12;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:22 */
+		zephyr,code-partition = &slot0_ns_partition; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:19 */
+		zephyr,sram = &sram0_ns;                     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:20 */
+		zephyr,entropy = &psa_rng;                   /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:21 */
+		zephyr,pdm = &pdm20;                         /* in ./app.overlay:5 */
+	};
+
+	/* node '/psa-rng' defined in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:30 */
+	psa_rng: psa-rng {
+		compatible = "zephyr,psa-crypto-rng"; /* in zephyr\dts\arm\nordic\nrf54lm20_a_b_cpuapp.dtsi:31 */
+		status = "okay";                      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_nrf54lm20a_cpuapp_ns.dts:27 */
+	};
+
+	/* node '/leds' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:10 */
+	leds {
+		compatible = "gpio-leds"; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:11 */
+
+		/* node '/leds/led_0' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:13 */
+		led0: led_0 {
+			gpios = < &gpio1 0x16 0x0 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:14 */
+			label = "Green LED 0";       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:15 */
+		};
+
+		/* node '/leds/led_1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:18 */
+		led1: led_1 {
+			gpios = < &gpio1 0x19 0x0 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:19 */
+			label = "Green LED 1";       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:20 */
+		};
+
+		/* node '/leds/led_2' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:23 */
+		led2: led_2 {
+			gpios = < &gpio1 0x1b 0x0 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:24 */
+			label = "Green LED 2";       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:25 */
+		};
+
+		/* node '/leds/led_3' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:28 */
+		led3: led_3 {
+			gpios = < &gpio1 0x1c 0x0 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:29 */
+			label = "Green LED 3";       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:30 */
+		};
+	};
+
+	/* node '/pwmleds' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:34 */
+	pwmleds {
+		compatible = "pwm-leds"; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:35 */
+
+		/* node '/pwmleds/pwm_led_1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:43 */
+		pwm_led1: pwm_led_1 {
+			pwms = < &pwm20 0x0 0x1312d00 0x0 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:44 */
+		};
+	};
+
+	/* node '/buttons' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:48 */
+	buttons {
+		compatible = "gpio-keys"; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:49 */
+
+		/* node '/buttons/button_0' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:51 */
+		button0: button_0 {
+			gpios = < &gpio1 0x1a 0x11 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:52 */
+			label = "Push button 0";      /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:53 */
+			zephyr,code = < 0xb >;        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:54 */
+		};
+
+		/* node '/buttons/button_1' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:57 */
+		button1: button_1 {
+			gpios = < &gpio1 0x9 0x11 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:58 */
+			label = "Push button 1";     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:59 */
+			zephyr,code = < 0x2 >;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:60 */
+		};
+
+		/* node '/buttons/button_2' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:63 */
+		button2: button_2 {
+			gpios = < &gpio1 0x8 0x11 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:64 */
+			label = "Push button 2";     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:65 */
+			zephyr,code = < 0x3 >;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:66 */
+		};
+
+		/* node '/buttons/button_3' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:69 */
+		button3: button_3 {
+			gpios = < &gpio0 0x5 0x11 >; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:70 */
+			label = "Push button 3";     /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:71 */
+			zephyr,code = < 0x4 >;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:72 */
+		};
+	};
+
+	/* node '/aliases' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:76 */
+	aliases {
+		led0 = &led0;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:77 */
+		led1 = &led1;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:78 */
+		led2 = &led2;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:79 */
+		led3 = &led3;               /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:80 */
+		pwm-led0 = &pwm_led1;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:81 */
+		sw0 = &button0;             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:82 */
+		sw1 = &button1;             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:83 */
+		sw2 = &button2;             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:84 */
+		sw3 = &button3;             /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:85 */
+		watchdog0 = &wdt31;         /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:86 */
+		mcuboot-button0 = &button0; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:26 */
+		mcuboot-led0 = &led0;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:27 */
+		adc = &adc;                 /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20_a_b_cpuapp_common.dtsi:28 */
+	};
+
+	/* node '/nordic_expansion_header' defined in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:89 */
+	nordic_expansion_header: nordic_expansion_header {
+		compatible = "nordic,expansion-board-header"; /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:90 */
+		#gpio-cells = < 0x2 >;                        /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:91 */
+		gpio-map-mask = < 0xffffffff 0xffffffc0 >;    /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:92 */
+		gpio-map-pass-thru = < 0x0 0x3f >;            /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:93 */
+		gpio-map = < 0x0 0x0 &gpio3 0x5 0x0 >,
+		           < 0x1 0x0 &gpio3 0x4 0x0 >,
+		           < 0x2 0x0 &gpio1 0x2 0x0 >,
+		           < 0x3 0x0 &gpio1 0x3 0x0 >,
+		           < 0x4 0x0 &gpio1 0x4 0x0 >,
+		           < 0x5 0x0 &gpio1 0xd 0x0 >,
+		           < 0x6 0x0 &gpio3 0x0 0x0 >,
+		           < 0x7 0x0 &gpio3 0x1 0x0 >,
+		           < 0x8 0x0 &gpio0 0x3 0x0 >,
+		           < 0x9 0x0 &gpio0 0x4 0x0 >,
+		           < 0xa 0x0 &gpio3 0x2 0x0 >,
+		           < 0xb 0x0 &gpio3 0x3 0x0 >,
+		           < 0xc 0x0 &gpio1 0x7 0x0 >,
+		           < 0xd 0x0 &gpio1 0x6 0x0 >,
+		           < 0xe 0x0 &gpio1 0x5 0x0 >,
+		           < 0xf 0x0 &gpio3 0x6 0x0 >,
+		           < 0x10 0x0 &gpio2 0x0 0x0 >,
+		           < 0x11 0x0 &gpio2 0x1 0x0 >,
+		           < 0x12 0x0 &gpio2 0x2 0x0 >,
+		           < 0x13 0x0 &gpio2 0x3 0x0 >,
+		           < 0x14 0x0 &gpio2 0x4 0x0 >,
+		           < 0x15 0x0 &gpio2 0x5 0x0 >;       /* in zephyr\boards\nordic\nrf54lm20dk\nrf54lm20dk_common.dtsi:94 */
+	};
+};

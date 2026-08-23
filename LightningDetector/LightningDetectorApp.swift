@@ -2,7 +2,7 @@
 //  LightningDetectorApp.swift
 //  LightningDetector
 //
-//  Created by Ben Titus on 6/20/26.
+//  Created by Benjamin Titus on 6/01/26.
 //
 
 import SwiftUI
