@@ -78,11 +78,13 @@ struct ScanView: View {
             }
             .padding(.horizontal, 20)
 
+            // FIX: Added padding here so it's not squished
             Button("Try Demo Mode") {
                 ble.enterMockMode()
             }
             .font(.caption)
             .foregroundStyle(.secondary)
+            .padding(.top, 24)
             .padding(.bottom, 40)
         }
     }
