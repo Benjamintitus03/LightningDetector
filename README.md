@@ -158,21 +158,18 @@ Moving forward:
   ---
   Step 2 — Scaffold the real BLE firmware project
 
-  Once your env works, you need a proper NCS project with:
+  Once  env works, you need a proper NCS project with:
   - Your custom GATT service (correct UUIDs, notify-only characteristic)
   - UART RX to receive data from the ESP32
   - Logic: receive byte on UART → write to characteristic → BLE notification fires to iPhone
 
-  I can write this for you — it's about 3 files (main.c, prj.conf, CMakeLists.txt). The GATT service macro in Zephyr is
-  straightforward once you know the pattern.
 
   ---
   Step 3 — UART bridge between ESP32 and Nordic
 
   The ESP32 runs the lightning algorithm. When it detects a strike, it needs to tell the Nordic chip. The simplest protocol: ESP32
   sends one byte over UART (0x01 detected, 0x00 clear) → Nordic receives it → writes to BLE characteristic → iPhone gets notified.
-
-  You'll need to coordinate with Beatriz on which ESP32 UART TX pin to use and the baud rate.
+coordinate with Beatriz on which ESP32 UART TX pin to use and the baud rate.
 
   ---
   Step 4 — Extend the protocol (later)
