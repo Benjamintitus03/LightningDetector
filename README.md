@@ -1,4 +1,4 @@
-# Lightning Detector
+# Lightning Detector / AsGuard
 
 Portable lightning detection safety device for picnickers — UCF Senior Design Group 12.
 
