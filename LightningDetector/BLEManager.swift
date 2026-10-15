@@ -2,6 +2,10 @@ import CoreBluetooth
 import Combine
 import Foundation
 
+enum ConnectionState: Equatable {
+    case disconnected, scanning, connecting, connected
+}
+
 struct StrikeEvent: Identifiable {
     let id = UUID()
     let timestamp: Date
@@ -17,7 +21,6 @@ class BLEManager: NSObject, ObservableObject {
     @Published var lightningStatus: LightningStatus = .safe
     @Published var connectionState: ConnectionState = .disconnected
     
-    // NEW: Flashy Features State
     @Published var currentRSSI: Int = 0
     @Published var strikeHistory: [StrikeEvent] = []
 
@@ -29,10 +32,6 @@ class BLEManager: NSObject, ObservableObject {
     private var centralManager: CBCentralManager!
     private var statusCharacteristic: CBCharacteristic?
     private var rssiTimer: Timer?
-
-    enum ConnectionState {
-        case disconnected, scanning, connecting, connected
-    }
 
     override init() {
         super.init()
