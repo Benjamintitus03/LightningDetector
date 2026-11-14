@@ -1,6 +1,8 @@
 {
     "nrf-connect.applications": [
-        "${workspaceFolder}\\Firmware"
+        "${workspaceFolder}\\Firmware",
+        "${workspaceFolder}/Firmware",
+        "${workspaceFolder}/Firmware/deploy"
     ],
     "cmake.sourceDirectory": "E:/Coding/LightningDetector/Firmware"
 }
